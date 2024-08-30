@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+       
+        height: 100%;
+        width: 500px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        margin-left: 30%;
+        padding-left: 20px;
+        margin-top: 30px;
+        background-color: blueviolet;
+
+        
+    
+    }
+    /* body{
+        background-color: blueviolet;
+    } */
+    h3{
+        display: inline;
+    }
+    label{
+        display: inline-block;
+    }
+</style>
+<body>
+        <div>
+        <legend><h1>Registration Form</h1></legend>
+        <form>
+
+
+        <label for="fname">FIRSTNAME:</label>
+        <input type="text" name="fname" id="fname"> 
+        <h3 id="value1"></h3><br><br>
+
+        <label for="lname">LASTNAME:</label>
+        <input type="text" name="fname" id="lname">
+        <h3 id="value2"></h3><br><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="text" name="email" id="email">
+        <h3 id="value3"></h3><br><br>
+
+        <label for="num">PASSWORD:</label>
+        <input type="number" name="num" id="num">
+        <h3 id="value4"></h3><br><br>
+
+
+        <label for="dob">DATE OF BIRTH:</label>
+        <input type="date" name="dob" id="dob">
+        <h3 id="value5"></h3><br><br>
+
+        <label for="add">ADDRESS:</label><br>
+        <textarea name="description" id="description"></textarea>
+        <h3 id="value6"></h3><br><br>
+
+        <input type="checkbox">I agree for terms and conditions<br><br><br>
+
+        <button type="reset">RESET</button>
+        <input type="button" value="Submit" id="btn" onclick="func()"/>
+    </form>
+</div>
+<script>
+    function func(){
+        document.getElementById("value1").innerHTML = fname.value;
+        document.getElementById("value2").innerHTML = lname.value;
+        document.getElementById("value3").innerHTML = email.value;
+        document.getElementById("value4").innerHTML = num.value;
+        document.getElementById("value5").innerHTML = dob.value;
+        document.getElementById("value6").innerHTML = description.value;
+
+
+
+    }
+
+</script>
+</body>
+</html>

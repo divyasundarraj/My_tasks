@@ -1,0 +1,143 @@
+.item-1{background-color: aqua;}
+.item-2{background-color: #c7bedd;}
+.item-3{background-color: blue;}
+.item-4{background-color: blueviolet;}
+.item-5{background-color: yellow;}
+.item-5{background-color: green;}
+.item-6{background-color: red;}
+.item-7{background-color: purple;}
+.item-8{background-color: orangered;}
+.item-9{background-color: palevioletred;}
+.item-10{background-color: greenyellow;}
+
+.container{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    height: 100vh;
+}
+.flex-item{
+    padding: 10px;
+
+}
+.container{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse;*/
+    flex-direction: column;
+    /* flex-direction: column-reverse;  */
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */ 
+
+    /* row-gap: 20px;  */
+    /* column-gap: 40px;
+    gap: 20px 40px;
+    gap: 40px; */
+    /* gap: 20px;  */
+
+    /* flex-flow:row wrap ; */
+    /* height:600px;
+    column-gap: 10px; */
+
+
+    justify-content: start;
+    /* justify-content: center; */
+     /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;   */
+
+     /* align-content: start;  */
+     /* align-items: start;  */
+
+    /*align-content: center;*/
+    /* align-content: end;  */
+
+    /* align-content: space-between; */
+    /* align-content: space-around;  */
+    /*align-content: space-between;  */ 
+
+   /* align-items: start; */
+    /* align-items: center;  */
+   /* align-items: end; */ 
+}
+
+    
+    /* .item-2{
+        order: 1;
+        flex-grow: 1;
+    }
+         */
+    
+    
+    /* .item-1{
+        order: 2;
+
+    }
+    .item-3{
+        order: ;
+    }
+     */
+     /* .item-4{
+        flex-grow: 1; */
+        /* flex-basis: 800px; */
+        /* flex-shrink: 1;}
+     */
+     /* .item-7{
+        flex: 1;
+     } */
+     /* .item-9{
+        flex: 1 1 400px;
+     } */
+      /* .item-2{
+        align-self: flex-start;
+        align-self: center;
+        align-self: flex-end; 
+
+     } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
