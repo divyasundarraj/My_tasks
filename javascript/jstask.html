@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+    <h1 class="head">hello</h1>
+
+    <script>
+let heading = document.getElementsByClassName("head")
+
+for(let i=0;i<heading.length;i++){
+
+    if(i%2){
+        heading[i].style.color="red"
+    }
+    else{
+        heading[i].style.color="blue"
+    }
+}
+    </script>
+</body>
+</html>

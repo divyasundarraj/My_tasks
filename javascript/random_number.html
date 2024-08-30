@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        
+        height: 100%;
+        background: linear-gradient(#f80a8d, #0adcf8);
+        height: 100vh;
+        padding-top: 20px;
+    
+
+    
+    }
+    div{
+        background-color: white;
+        height: 200px;
+        width: 400px;
+        text-align: center;
+        padding-top: 25px;
+        margin-left: 34.5%;
+        border-radius: 30px;
+        margin-top: 80px;
+    
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Welcome To My Game!!!</h1>
+    <div>
+    <h2>Guess The Number</h2>
+    <input type="text" id="box">
+    <button onclick="check()">Click</button>
+    <p id="result">You're Right/Wrong</p> 
+    <p id="score">Score = 10</p>
+    </div>
+
+    <script>
+        //selcting the text box,paragraph
+        var guessnumber = document.getElementById("box")
+        var para = document.getElementById("result")
+        var randomnumber = Math.floor(Math.random()*10)+1
+        var score = document.getElementById("score")
+        var totalscore = 10
+
+        function check(){
+            var enterednumber = guessnumber.value
+            if(randomnumber==enterednumber){
+                result.textContent="You're Right"
+                alert("YOU WON.....!")
+            }
+            else{
+                totalscore = totalscore-1
+                score.textContent="Score = "+totalscore
+                result.textContent="You're Wrong"
+
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

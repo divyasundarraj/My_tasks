@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+
+    <h1 id="name">Hi iam divya</h1>
+    <input type="text" id="in">
+</div>
+
+<p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam amet minus repudiandae voluptatem quidem magni ea magnam officiis sapiente, ducimus voluptas eveniet tempore facilis doloremque libero. Id provident modi alias?</p>
+
+<div id="box1" style="height: 50px;">
+    <input type="text" name="" id="in1">
+    
+</div>
+<h1 class="heading">hello</h1>
+<h1 class="heading">hello</h1>
+<h1 class="heading">hello</h1>
+<h1 class="heading">hello</h1>
+<h1 class="heading">hello</h1>
+<h1 class="heading">hello</h1>
+
+<div id="box2">
+</div>
+    <script>
+        let obj = document.getElementById("name")
+        console.log(obj.innerText)
+        obj.innerText="iam priya"
+        console.log(obj.innerText)
+    
+
+        let a = document.getElementById("box")
+        a.style.backgroundColor="red"
+    
+    
+        let box = document.getElementById("in")
+        box.placeholder="name"
+
+        let para = document.getElementById("para")
+        para.style.color="white"
+        para.style.backgroundColor="black"
+
+        let b = document.getElementById("box1")
+        b.style.backgroundColor="gray"
+        let input = document.getElementById("in1")
+        input.placeholder="name"
+
+        let head = document.getElementsByClassName("heading")
+        
+        for(let i=0;i<head.length;i++){
+            head[i].style.color="red"
+
+            if(i==3){
+                head[i].style.color="blue"
+            }
+            else if(i==2){
+                head[i].innerHTML="hi"
+                head[i].style.color="green"
+            }
+        }
+    let c = document.querySelector("#box2")
+    console.dir(c)
+    c.style.backgroundColor="red"
+    c.style.color="blue"
+    c.innerText="divya"
+    
+    let create = document.createElement("input")
+    create.value="name"
+
+        
+    </script>
+</body>
+</html>

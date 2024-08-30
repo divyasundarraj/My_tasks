@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    
+        #box1{
+            background-color: rgb(9, 212, 212);
+            width: 500px;
+            height: 250px;
+            margin-top: 50px;
+            margin-left: 40px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: 1s;
+        }
+        .btn1,.btn2,.btn3,.btn4,.btn5{
+            height: 30px;
+            width: 100px;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-right: 15px;
+        
+        }
+        
+        
+        .btn1:hover{
+            background-color: rgb(75, 9, 42);
+            color: white;
+        }
+        .btn2:hover{
+            background-color: rgb(14, 114, 84);
+            color: white;
+        }
+        .btn3:hover{
+            background-color: rgb(240, 23, 131);
+            color: white;
+        }
+        .btn4:hover{
+            background-color: rgb(163, 24, 243);
+            color: white;
+        }
+        .btn5:hover{
+            background-color: rgb(12, 2, 102);
+            color: white;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <div id="box">
+    <div id="box1"></div>
+    <button class="btn1" onclick="color('brown')">Button-1</button>
+    <button class="btn2" onclick="color('green')">Button-2</button>
+    <button class="btn3" onclick="color('pink')">Button-3</button>
+    <button class="btn4" onclick="color('violet')">Button-4</button>
+    <button class="btn5" onclick="color('blue')">Button-5</button>
+    </div>
+    <script>
+        let btn1 = document.getElementById("box1")
+        
+
+        let color = (x)=>{
+            if(x == 'brown'){
+                btn1.style.backgroundColor="rgb(75, 9, 42)"
+            }
+            else if(x == 'green'){
+                btn1.style.backgroundColor="rgb(14, 114, 84)"
+            }
+            else if(x == 'pink'){
+                btn1.style.backgroundColor="rgb(240, 23, 131)"            
+            }
+            else if(x == 'violet'){
+                btn1.style.backgroundColor="rgb(163, 24, 243)"
+            }
+            else if(x == 'blue'){
+                btn1.style.backgroundColor="rgb(12, 2, 102)"            
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<style>
+    button{
+        
+        margin-top: 20px;
+    }
+    /* #ourput1{
+        
+        
+        display: inline;
+
+       
+}
+#output2{
+       
+        display: inline;
+       
+} */
+form{
+    margin-top: 50px;
+}
+
+</style>
+<body>
+
+    <form>
+        <input type="text" id="txt1">
+        <input type="text" id="txt2">
+        <input type="button" value="click" onclick="hello()"><br><br>
+        <h3 id="output1"></h3><h3 id="output2"></h3>
+    </form>
+    <script>
+
+        function hello(){
+            
+            document.getElementById("output1").innerHTML = txt1.value;
+            document.getElementById("output2").innerHTML = txt2.value;
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+#title{
+  
+    display: inline;
+    margin-left: 20px;
+}
+body{
+    height: 100%;
+    background: linear-gradient(#f80a8d, #0adcf8);
+    height: 100vh;
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+}
+
+#register{
+    cursor: pointer;
+   margin-left: 68%;
+    color: black;
+    display: inline;
+}
+#login{
+    color: black;
+    cursor: pointer;
+    display: inline;  
+}
+#register:hover{
+    color: red;
+}
+#login:hover{
+    color: red;
+}
+
+#box2{
+    background-color: white;
+    height: 40px;
+    width: 700px;
+    margin-left: 26%;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}

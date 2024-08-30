@@ -1,0 +1,41 @@
+
+body{
+    background-color: aqua;
+}
+h1{
+    color: black;
+    margin-left: 43%;
+}
+#box1{
+    height: 200px;
+    width: 400px;
+    margin-top: 50px;
+    background-color: violet;
+    margin-left: 35%;
+    padding-left: 10px;
+    padding-top: 30px;
+
+}
+
+label{
+    color: black;
+    display: inline;
+}
+button{
+    display: block;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+#op1{
+    height: 20px;
+    width: 100px; 
+    display: inline-block;
+    /* background-color: black; */
+}
+#op2{
+    height: 20px;
+    width: 100px;
+    display: inline-block;
+    /* background-color: black; */
+
+}

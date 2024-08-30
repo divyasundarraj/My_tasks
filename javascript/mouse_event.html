@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div id="box" style="width: 200px; height: 200px; background-color: blue;" onmouseover="change()" onmouseout="change1()" onmousedown="change2()" onmouseup="change3()"></div>
+    
+
+    <script>
+
+        var color = document.getElementById("box")
+
+        function change(){
+            color.style.backgroundColor="red"
+        }
+        function change1(){
+            color.style.backgroundColor="green"
+        }
+        function change2(){
+            color.style.backgroundColor="violet"
+        }
+        function change3(){
+            color.style.backgroundColor="yellow"
+        }
+    
+    </script>
+    
+    
+</body>
+</html>

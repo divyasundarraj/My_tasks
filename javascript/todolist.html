@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+    <input type="text" id="inp" class="form-control w-50 my-3" placeholder="Enter Task"> 
+    <button onclick="func()" class="btn btn-outline-primary">Add Task</button>
+
+    <table class="table table-bordered table-hover my-4">
+        <thead>
+            <tr class="table-danger">
+
+
+
+                
+                <th>Task</th>
+                <th>Action</th>   
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody class="table-info">
+
+        </tbody>
+    </table>
+
+    <script>
+    let tbody = document.querySelector("tbody")
+    let valueholder = []
+    if(localStorage.getItem("vh")){
+        valueholder = JSON.parse(localStorage.getItem("vh"))
+    }
+
+        function func(){
+            
+            let inp = document.querySelector("input").value
+            
+            let randomgenerate = Math.round(Math.random()*100)
+            valueholder.push({id:randomgenerate,value:inp})
+            localStorage.setItem("vh",JSON.stringify(valueholder))  
+
+            document.querySelector("input").value=""
+
+        
+            
+            show()
+
+            }
+
+
+            function show(){
+                tbody.innerHTML=""
+
+                let vh = JSON.parse(localStorage.getItem("vh"))
+                localStorage.removeItem("vh")
+                
+                vh.forEach(e => {
+                    console.error(e)
+                    
+
+            let tr = document.createElement("tr")
+            let td = document.createElement("td")
+            let td2 = document.createElement("td")
+            td2.innerHTML = "<button class='btn btn-outline-primary'>Edit</button>"
+            let td3 = document.createElement("td")
+            td3.innerHTML = `<button class='btn btn-outline-danger' onclick="removearr(${e.id})">Delete</button>`
+            td.append(e.value)
+
+            tr.append(td,td2,td3)
+            tbody.append(tr)
+            });
+            }
+        
+            
+            let removearr = (a)=>{
+                valueholder = valueholder.filter((x)=>{
+                    if(x.id != a){
+                        return x
+                    }
+                })
+                
+                show()
+            }
+
+
+
+            
+        
+
+    </script>
+
+</body>
+</html>

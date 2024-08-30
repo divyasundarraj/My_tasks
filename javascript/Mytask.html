@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+    
+    #btn1{
+        display: block;
+        margin-top: 10px;
+    }
+    
+
+    #output{
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+    }
+   
+</style>
+<body>
+    
+    <form>
+        <input type="text" placeholder="Name" id="txtbox1"/>
+        <input type="text" placeholder="Age" id="txtbox2"/>
+        <input type="button" value="Click" id="btn1" onclick="fuct1()" />
+        <div id="output"></div>
+    </form>
+
+  
+    <script>
+        const txt1 = document.getElementById("txtbox1")
+        const txt2 = document.getElementById("txtbox2")
+
+        const btn1 = document.getElementById("btn1")
+        const o_p = document.getElementById("output")
+
+        function fuct1(){
+            o_p.innerHTML = txt1.value;
+            // o_p.innerHTML = txt2.value;
+
+        }
+
+    </script>
+    
+</body>
+</html>

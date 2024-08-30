@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            name:"divya",
+            age:22,
+            place:"thiruvarur"
+        }
+        let obj2 = {
+            name:"priya",
+            age:23
+        }
+        //keys()
+        //console.log(Object.keys(obj))
+        console.log(obj.name)
+
+        //values()
+        console.log(Object.values(obj))
+
+        //entries
+        console.log(Object.entries(obj))
+
+        //asign()
+        console.log(Object.assign(obj,obj2))
+
+        //create()
+
+// let created = Object.create({
+//     func:function(x){
+//         if(typeof x=="String"){
+//             this.name=x
+//         }
+//     }
+// })
+// created.name ="divya"
+// console.log(created)
+// created.func("change it")
+// console.log(created)
+
+let created = Object.create({
+    func:function(x){
+        if(typeof x=="string"){
+            this.name=x
+        }
+        
+    }
+})
+created.name="divya"
+console.log(created)
+created.func("change it")
+console.log(created)
+
+//for each
+let obj3 = {
+    name:["divya","priya","kavya"]
+}
+let key = obj3.name
+console.log(key)
+key.forEach(fruit =>{
+    console.log(fruit)
+})
+let a = key.map(e,i) => {
+    return 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
