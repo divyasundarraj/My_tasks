@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr;
+
+        }
+        .box1{
+            background-color: rgb(11, 255, 11);
+            padding: 70px;
+        }
+        
+        .container2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            column-gap: 10px; 
+        }
+
+        
+        
+        .box2{
+            background-color: rgb(7, 189, 189);
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+
+            
+        }
+        .box3{
+
+            background-color: rgb(255, 216, 168);
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        @media(max-width:800px) {
+            .box2{
+                height: 250px;
+            }
+            .box3{
+                height: 150px;
+            }
+            
+        }
+        @media(max-width:600px) {
+
+            .container2{
+                grid-template-columns: 1fr;
+            }
+            .box2{
+                height: 30px;
+            }
+            .container3{
+                grid-template-columns: 1fr 1fr;
+            }
+            .box3{
+                height: 20px;
+            }
+   
+        }
+        @media(max-width:300px) {
+            .container2{
+                grid-template-columns: 1fr;
+            
+            }
+            .box2{
+                height: 100px ;
+            }
+            .container3{
+                column-gap: 0;
+                margin-top: 10px;
+
+            }
+            .box3{
+                margin-top: 0;
+            
+            }
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container1">
+    <div class="box1"></div>
+    </div>
+    <div class="container2">
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+</div>
+    <div class="container3">
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    </div>
+
+</body>
+</html>
