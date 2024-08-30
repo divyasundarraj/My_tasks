@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        p::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+        
+        p::first-line{
+            color: red;
+            font-style: italic;
+            font-size: 40px;
+        }
+        */
+        
+        p::before{
+            content:'paragraph';
+            font-size: 50px;
+            font-style: italic;
+            color: red;
+        }
+        
+        p::after{
+            content:'concluded';
+            font-size: 50px;
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit quod commodi fugit id, veritatis harum a, eum excepturi accusamus aperiam sapiente, qui architecto odit. Aperiam, tempore. Fuga aut accusantium qui debitis quis earum itaque odio, quisquam unde quo, ab molestias eius labore eum nihil nisi nostrum vero error! Neque!</p>
+</body>
+</html>
